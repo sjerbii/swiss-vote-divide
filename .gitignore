@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/raw/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+.env
