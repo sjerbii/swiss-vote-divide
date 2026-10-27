@@ -1,3 +1,5 @@
 requests
 pandas
 ipykernel
+pyarrow
+matplotlib
