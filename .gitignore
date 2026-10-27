@@ -220,6 +220,7 @@ __marimo__/
 .streamlit/secrets.toml
 
 data/raw/
+data/processed/
 .venv/
 .ipynb_checkpoints/
 .DS_Store
