@@ -50,7 +50,7 @@ Measuring how much Switzerland’s language divide (the “Röstigraben”) affe
 - 2017 data uses 2017 municipality numbers. A BFS list of old → new numbers converts them to the 2026 list (179 numbers changed). Merged municipalities are combined with weighted averages: add up the counts and totals, then divide
 - Used average instead of median income because medians can't be combined when municipalities merge. The downside is outliers: Vaux-sur-Morges has an average of 578,660 Fr.
 - The tax office hides taxpayer counts in tiny municipalities for privacy. Those get an empty income (19 municipalities), including merged ones where one part was hidden
-- First look: Italian- and Romansh-speaking municipalities are older and poorer on average, French-speaking ones slightly richer than German-speaking ones. So these variables are worth controlling for
+- First look: Italian- and Romansh-speaking municipalities are older and poorer on average. French-speaking ones have a higher average income than German-speaking ones, but the medians are almost the same (see log 4). So these variables are worth controlling for
 
 **Next**
 - Explore the joined data and decide how to model the language effect
