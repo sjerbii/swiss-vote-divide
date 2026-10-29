@@ -54,3 +54,20 @@ Measuring how much Switzerland’s language divide (the “Röstigraben”) affe
 
 **Next**
 - Explore the joined data and decide how to model the language effect
+
+### 4 - Demographics by language region (10/29)
+
+**Done**
+- Compared the three demographic variables across language regions in `notebooks/02_explore_demographics.ipynb`: summary tables and boxplots for age and income, and a crosstab for urban/rural
+
+**Main Takeaways**
+- The joined file has one row per municipality per vote (286,118 rows), so the comparison first reduces it to one row per municipality (2,105). Otherwise every municipality would count about 136 times
+- Age: Italian- and Romansh-speaking municipalities are older (median share 65+: it 0.23, rm 0.25, de 0.19, fr 0.17)
+- Income (log scale because of outliers): German and French medians are almost the same (about 64,000 Fr.). The French mean is higher only because of a long upper tail. Italian (56,600 Fr.) and Romansh (49,100 Fr.) are lower
+- Urban/rural: 93% of Romansh municipalities are rural and none are urban. Italian has the highest urban share (39%), compared with 25% de and 20% fr
+- 15 of the 19 municipalities with empty income are German-speaking
+- Romansh has only 15 municipalities, so its numbers are less reliable than the others
+
+**Next**
+- Write up findings in the notebook
+- Decide how to model the language effect while controlling for demographics
