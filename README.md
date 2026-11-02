@@ -71,3 +71,21 @@ Measuring how much Switzerland’s language divide (the “Röstigraben”) affe
 **Next**
 - Write up findings in the notebook
 - Decide how to model the language effect while controlling for demographics
+
+### 5 - Language effect per vote (11/02)
+
+**Done**
+- Added `statsmodels` to `requirements.txt`
+- Ran one regression per vote in `notebooks/03_language_regressions.ipynb`: `yes_pct` on language region, controlling for urban/rural, share 65+ and log income. German is the reference group, so each language coefficient is the gap in percentage points compared with German-speaking municipalities that have the same demographics
+
+**Main Takeaways**
+- One regression per vote instead of one for all votes, because the language gap changes direction. French-speaking municipalities voted more yes than German-speaking ones in 82 votes and less in 54 (raw gap from −27.9 to +30.5 points). Pooled together, these would cancel out to a gap of only 2.7 points
+- Municipalities are weighted by valid votes, because the divide is about people, not places. Big cities count more, and the 15 small Romansh municipalities count very little
+- Summary measure: the average absolute coefficient, i.e. the size of the gap in a typical vote whatever its direction. French 9.3, Italian 7.0, Romansh 5.9 points
+- Largest French–German gaps: food sovereignty initiative (2018, +29.1) and cantonal property tax on second homes (2025, −26.4)
+- Averaging absolute values makes noise look like an effect, so the Romansh number is probably too high
+- 19 municipalities without income data are left out of the regressions (2,086 remain)
+
+**Next**
+- Write up findings in the notebooks
+- Decide whether tie-break questions (such as the 2010 expulsion initiative vs counter-proposal) belong in the regressions
