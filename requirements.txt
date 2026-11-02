@@ -4,3 +4,4 @@ ipykernel
 pyarrow
 matplotlib
 openpyxl
+statsmodels
